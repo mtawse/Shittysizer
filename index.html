@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebAudio Shittysizer</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div id="container">
+      <h1>WebAudio Shittysizer</h1>
+      <div class="row" id="controls">
+          <span class="display-select">
+            <label for="tempo-select">Tempo</label>
+            <input type="radio" id="tempo-select" name="display-select-input" value="tempo" checked><br>
+            <label for="step-select">Step</label>
+            <input type="radio" id="step-select" name="display-select-input" value="step"><br>
+            <!--<label for="octave-select">Octave</label>
+            <input type="radio" id="octave-select" name="display-select-input" value="octave">-->
+          </span>
+          <span id="sequencer-display">
+          </span>
+          <span class="control-btns">
+            <button class="btn control-btn btn-down btn-info" id="back"><<</button>
+            <button class="btn control-btn btn-success" id="play">Play</button>
+            <button class="btn control-btn btn-up btn-info" id="forward">>></button>
+            <button class="btn control-btn btn-record btn-danger" id="record">Record</button>
+          </span>
+          <span>
+            <!--<label for="master">Volume</label>-->
+            <!--<input type="range" class="master" id="master" min="0" max="100"><span class="master_display" id="master_display"></span>  -->
+          </span>
+    </div>
+
+    <div class="row" id="keypad">
+      <div class="btn-group">
+            <button id="key_1" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_2" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_3" class="btn key black-key"><div class="off button-light"></div></button>
+            <button id="key_4" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_5" class="btn key black-key"><div class="off button-light"></div></button>
+            <button id="key_6" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_7" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_8" class="btn key black-key"><div class="off button-light"></div></button>
+            <button id="key_9" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_10" class="btn key black-key"><div class="off button-light"></div></button>
+            <button id="key_11" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_12" class="btn key black-key"><div class="off button-light"></div></button>
+            <button id="key_13" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_14" class="btn key white-key"><div class="off button-light"></div></button>
+            <button id="key_15" class="btn key black-key"><div class="off button-light"></div></button>
+            <button id="key_16" class="btn key white-key"><div class="off button-light"></div></button>
+      </div>
+    </div>
+</div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/underscore/underscore-min.js"></script>
+    <script src="js/vendor/jquery/jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/backbone/backbone-min.js"></script>
+    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+    
+    
+    <script src="js/sequencer.js"></script>
+    <script src="js/synth.js"></script>
+    <script src="js/box.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

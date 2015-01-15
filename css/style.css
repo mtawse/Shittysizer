@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/*font: 71%/1.5 Verdana, Sans-Serif;*/
+	background: #ccc;
+}
+
+#container {
+    padding: 15px;
+	margin: 100px auto;
+	width: 1000px;
+    border: 3px solid #000;
+    background: #ccc;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; 
+}
+
+#controls {
+    width: 800px;
+	margin-left: 0;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#controls .control-btn {
+    font-weight: bold;
+    text-align: center;
+}
+
+#step-controls {
+    /*width: 80px;*/
+    /*height: 60px;*/   
+    display: inline;
+    clear:both;
+}
+
+#step-controls .btn-up, #step-controls .btn-down {
+    font-size: 160%;  
+    margin-left: 3px
+}
+
+#sequencer-display {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 180%;
+    float: left;
+    line-height: 50px; <-- this is what you must define
+    vertical-align: middle;
+    width: 100px;
+    height: 50px;  
+    border: 2px solid #000;
+    background: #f0ad4e;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;   
+}
+
+#controls .display-select {
+    float: left;
+    margin-right: 10px;
+}
+
+#controls .display-select label {
+    width: 50px;
+}
+
+#controls .control-btn {
+    width: 70px;
+}
+
+#controls .control-btns {
+    margin-left: 10px;
+}
+
+
+#keypad {
+	margin: 0;
+	padding: 0;
+}
+
+#keypad button.key {
+    float: left;
+    position: relative;
+    margin: 0 5px 5px 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;	
+}
+
+#keypad .button-light {
+	width: 25px;
+    height: 7px;	
+    margin: 5px auto 30px auto;
+    border: 1px solid #f9f9f9; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;	
+}
+
+#keypad .off {
+	background: #bbb;	
+}
+
+#keypad .on {
+	background: #FF4500;	
+}
+
+#keypad button.white-key {
+	background: #FFF;
+}
+
+#keypad button.black-key {
+	background: #000;
+}
+
+#keypad li {
+	/*
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    */
+}
